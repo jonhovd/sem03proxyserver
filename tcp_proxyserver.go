@@ -26,7 +26,7 @@ func main() {
 			go func(client net.Conn) {
 				defer client.Close()
 
-				server, err := net.Dial("tcp", "172.17.0.3:40000")
+				server, err := net.Dial("tcp", "172.17.0.2:40000")
                 if err != nil {
 					log.Println(err)
 					return
